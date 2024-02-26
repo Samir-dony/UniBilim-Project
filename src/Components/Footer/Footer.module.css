@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.footer{
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer__connection, .footer__navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0;
+}
+
+.connection_info_item, .footer__navigation_info a{
+    display: flex;
+    padding: 15px;
+    padding-left: 0;
+    gap: 0 20px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+.footer__navigation_info a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 650px) {
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px 0;
+        padding: 0px 20px;
+    }
+
+    .footer__image img{
+        display: none;
+    }
+}

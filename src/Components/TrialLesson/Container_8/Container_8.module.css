@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__text, .container__text_option{
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+
+.container__text_h1 {
+    font-family: "Bellota Text", sans-serif;
+    font-size: 20px;
+}
+
+.option__div_question{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.option__div_question img{
+    transform: rotate(-90deg);
+    transform: 0.5s;
+}
+
+.option__div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container_image{
+    display: flex;
+    align-items: center;
+}
+
+
+.option__div_answer{
+    color: #515151;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 700px ) {
+    .container_image{
+        display: none;
+    }
+
+    .container__text_h1{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+}

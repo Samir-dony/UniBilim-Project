@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px 0;
+    font-size: 25px;
+}
+
+.container__text h1{font-family: "Bellota Text", sans-serif;}
+
+.container__text button{
+    width: fit-content; 
+    padding: 20px 30px;
+    background-color: #FF601A;
+    border-radius: 4px;
+    border-style: none;
+    color: white;
+    border-color: none;
+    font-size: 20px;
+}
+
+.container__text_input{
+    display: flex;
+    gap: 0 10px;
+}
+
+@media screen and (max-width: 790px) {
+    .container__image{
+        display: none;
+    }    
+
+    .container__text{
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .container__text h1 {
+        font-size: 35px;
+    }
+
+    .container__text h1 br{
+        display: none;
+    }
+}

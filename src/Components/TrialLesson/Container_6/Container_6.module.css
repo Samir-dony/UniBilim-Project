@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.container h1{
+    font-family: "Bellota text", sans-serif;
+}
+
+.container h1 span{
+    color: #FF601A;
+}
+
+.container__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+}
+.container__grid_item{
+    font-size: 18px;
+}
+
+.item__header{
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+
+.item__text{
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item__text button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.container__grid_item:last-child{
+    border: 1pt solid #FF601A;
+
+    .item__header{
+        background-color: #FF601A;
+        color: white;
+    }
+}
+
+.item__text_price{
+    display: flex;
+    gap: 0 20px;
+}
+
+.item__text_price p, .item__text_p{
+    font-size: 30px;
+}
+
+.item__text_price div{
+    padding: 5px;
+    border: 1px solid #5F4DD2;
+    border-radius: 6px;
+    color: #5F4DD2;
+}
+
+/* footer  */
+.container_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 80px;
+}
+
+.footer__item{
+    display: flex;
+    gap: 0 20px;
+}
+
+@media screen and (max-width: 560px) {
+    .container{
+        gap: 30px;
+    }
+
+    .container__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .container_footer{
+        flex-direction: column;
+        gap: 50px 0;
+    }
+
+    .container__grid_item{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 561px) and (max-width: 1350px) {
+    .container__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container_footer{
+        flex-direction: column;
+        gap: 50px 0;
+    }
+
+    .footer__item{
+        align-items: center;
+    }
+}
