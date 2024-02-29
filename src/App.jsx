@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/Exam" Component={Exam}/>
       <Route path="/Contacts" Component={Contacts}/>
-      <Route path="/TrialLesson" Component={TrialLesson}/>
+      <Route path="/" Component={TrialLesson}/>
     </Routes>
     
     <Footer/>

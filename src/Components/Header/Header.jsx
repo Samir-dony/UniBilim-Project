@@ -22,7 +22,7 @@ const Header = () => {
                 <div className={cl.header_navBar}>
                     <Link to="/Exam">ОРТ</Link>
                     <Link to="/Contacts">Контакты</Link>
-                    <Link to="/TrialLesson">Пробный урок</Link>
+                    <Link to="/">Пробный урок</Link>
                 </div>
 
                 <div className={cl.header__burger_menu} onClick={getChangetMenu}>
@@ -36,7 +36,7 @@ const Header = () => {
 
                     <Link to="/Exam">ОРТ</Link>
                     <Link to="/Contacts">Контакты</Link>
-                    <Link to="/TrialLesson">Пробный урок</Link>
+                    <Link to="/">Пробный урок</Link>
                 </div>}
 
             </header>
